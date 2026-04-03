@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chatbot UI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <header class="chat-header">
+            <div class="bot-info">
+                <div class="bot-avatar">
+                    <i class="fa-solid fa-robot"></i>
+                    <div class="status-dot"></div>
+                </div>
+                <div>
+                    <h2>Nexus-9 AI</h2>
+                    <p>Online</p>
+                </div>
+            </div>
+            <div class="header-actions">
+                <button><i class="fa-solid fa-ellipsis-vertical"></i></button>
+            </div>
+        </header>
+
+        <main class="chat-box" id="chat-box">
+            <div class="message bot-message fade-in">
+                <div class="avatar"><i class="fa-solid fa-robot"></i></div>
+                <div class="content">
+                    <p>Hello! I'm Nexus-9. How can I assist you today?</p>
+                    <span class="timestamp">10:00 AM</span>
+                </div>
+            </div>
+        </main>
+
+        <div class="typing-indicator" id="typing-indicator" style="display: none;">
+            <span></span><span></span><span></span>
+        </div>
+
+        <footer class="chat-input-area">
+            <button class="icon-btn"><i class="fa-solid fa-paperclip"></i></button>
+            <input type="text" id="user-input" placeholder="Type a message..." autocomplete="off">
+            <button class="icon-btn send-btn" id="send-btn"><i class="fa-solid fa-paper-plane"></i></button>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
